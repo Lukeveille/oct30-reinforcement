@@ -33,3 +33,9 @@ project = {
     }
   ]
 }
+
+for (let i = 0; i < project.steps.length; i++) {
+  project.steps[i].person = project.committee[i % project.committee.length]
+}
+
+console.log(project.steps);
